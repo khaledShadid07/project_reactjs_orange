@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products page</title>
+  <title>Cart</title>
+  <link rel="stylesheet" href="./cart.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,10 +22,13 @@
 </head>
 
 <body>
+
   <!-- first navbar start -->
   <nav class="nav d-flex justify-content-between p-4 shadow-lg align-content-center  flex-wrap">
     <div class="d-flex align-items-center pt-2 me-4">
-       <a style="text-decoration: none;color: black;" href="./main.html"><p class="lead fw-bold ">JavaShop</p></a>
+      <a style="text-decoration: none;color: black;" href="./main.html">
+        <p class="lead fw-bold ">JavaShop</p>
+      </a>
     </div>
     <div class="d-flex flex-grow-1  me-4"><input placeholder="Search For Products" class="form-control border-dark"
         type="text">
@@ -42,7 +45,7 @@
         <path
           d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
       </svg>
-      
+
       <a href="./cart.html">
         <div class="nav-cart-container ">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-cart me-4"
@@ -61,7 +64,7 @@
 
 
   <!-- second navbar -->
-   <nav  class="nav_2 bg-dark d-flex justify-content-center flex-wrap shadow-lg">
+  <nav class="nav_2 bg-dark d-flex justify-content-center flex-wrap shadow-lg">
     <p role="button" class=" fw-bold text-light mx-4 mt-3 ">Home</p>
     <p role="button" class=" fw-bold text-light mx-4 mt-3 ">About</p>
     <p role="button" class=" fw-bold text-light mx-4 mt-3 ">Category</p>
@@ -76,15 +79,50 @@
   </nav>
   <!-- second navbar -->
 
-  <!-- products container start-->
-  
-  <main class="all-products-container d-flex p-4 flex-wrap justify-content-center gap-3">
+  <!--  -->
+  <!--  -->
+
+
+  <!-- cart body start-->
+
+  <main class="cart-items-container border-4    p-4">
+
+
 
 
   </main>
-<!-- products container end-->
+
+ <!-- cart body End-->
+
+ <!--  -->
+ <!--  -->
+  <section class="order-summary d-flex flex-column align-items-center justify-content-center mb-4 ">
+    
+    <div class="border border-2 border-dark rounded-2 p-4 d-flex flex-column">
+    <div class=" order-container">
+       <p class="lead fw-bold">OrderSummary</p>
+       <div class="order-info ">
+        <p class="lead ">Subtotal</p>
+        <p class="lead ">250$</p>
+        <p class="lead ">Tax</p>
+        <p class="lead ">250$</p>
+        <p class="lead " >Discount</p>
+        <p class="lead ">250$</p>
+        <p class="lead fw-bold">TOTAL:</p>
+        <p class="lead fw-bold">250$</p>
+        
+       </div>  
+      
+    </div>
+     <button class="btn btn-dark mt-4">Proceed to Checkout</button>
+     
+      </div>
+  </section>
+
  
-  <script type="module" src="./main.js"></script>
+
+
+ <script type="module" src="./main2.js"></script>
 </body>
 
 </html>

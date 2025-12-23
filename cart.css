@@ -1,0 +1,25 @@
+
+*{font-family: roboto;margin: 0px;padding: 0px;}
+
+/* nabr css */
+
+.nav-cart-container{position: relative;}
+.nav-cart-p{position: absolute;top: -20px;right: 20px;color: white;background-color: black;
+padding:0px 8px;border-radius: 20px;
+}
+@media screen and (width<600px) {
+  
+  .nav-left-container{margin-top: 30px;}
+  .item-info{margin-bottom: 10px;}
+  .cart-name{width:100px}
+}
+
+/* nabr css end*/
+
+
+/* cart */
+.cart-img{width: 120px;}
+/* cart */
+
+.order-info{display: grid;grid-template-columns: 4fr 1fr;}
+.cart-name{width:200px}

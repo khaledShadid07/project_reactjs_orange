@@ -1,5 +1,7 @@
-console.log("Java Script SwitchedOn You Are In Good Hand")
+console.log("KHALED SHADID SwitchedOn Java Script  You Are In Good Hand")
+console.log("I Dont Drive Fast I Fly Slowly")
 import { products } from "./data/data.js";
+import { Cart , add_to_cart , updateCartQuantity } from "./cart.js";
 
 
 
@@ -18,7 +20,7 @@ const render_products = () => {
          <p class="lead fw-light mt-3 ms-2">${product.rating.count}</p>
        </div>
         <p class="text-center fw-bold ">${((product.priceCents)/100).toFixed(2)}<span class="ps-1">$</span></p>
-        <button class="btn btn-outline-dark border-2 fw-bold">Add To Cart</button>
+        <button data-product-id="${product.id}" class="add-button-js btn btn-outline-dark border-2 fw-bold">Add To Cart</button>
     </div>
      
      `
@@ -33,5 +35,14 @@ const render_products = () => {
 }
 
 render_products()
+ updateCartQuantity()
 // all products container in main page end
 
+
+document.querySelectorAll('.add-button-js').forEach((button)=>{
+  button.addEventListener('click',()=>{
+   const productId=button.dataset.productId
+   add_to_cart(productId)
+   updateCartQuantity()
+  })//evebt lisner end
+})//for each end
