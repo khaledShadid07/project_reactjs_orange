@@ -18,8 +18,8 @@ padding:0px 8px;border-radius: 20px;
 
 
 /* cart */
-.cart-img{width: 120px;}
+.cart-img{width: 120px;text-align: center;}
 /* cart */
 
 .order-info{display: grid;grid-template-columns: 4fr 1fr;}
-.cart-name{width:200px}
+.cart-name{width:200px;text-align: center;}

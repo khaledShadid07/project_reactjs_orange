@@ -1,3 +1,4 @@
+import { products } from "./data/data.js";
 // initilize cart start
 export let Cart ;
 
@@ -59,6 +60,7 @@ export function remove_from_cart(productId){
   const newCart =[]
   Cart.forEach((cartItem)=>{
     if(productId !== cartItem.productID){newCart.push(cartItem)}
+    else if(productId === cartItem.productID & cartItem.quantity>1){newCart.push({...cartItem,quantity:cartItem.quantity-=1})}
 
   })//loop cart end
   Cart=newCart
@@ -92,3 +94,27 @@ document.querySelector('.nav-cart-p').innerHTML=localStorage.getItem('quantity')
 
 }
 //update cart quantity
+
+export function total_payment(){
+let total=0;
+let tax=20;
+Cart.forEach((item)=>{
+products.forEach((product)=>{
+  if(product.id===item.productID){total+=((product.priceCents/100)*item.quantity)}
+})
+
+})
+return (total+tax).toFixed(2);
+}
+
+export function sub_payment(){
+let total=0;
+
+Cart.forEach((item)=>{
+products.forEach((product)=>{
+  if(product.id===item.productID){total+=((product.priceCents/100)*item.quantity)}
+})
+
+})
+return total.toFixed(2);
+}
