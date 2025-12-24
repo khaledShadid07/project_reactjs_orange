@@ -1,0 +1,25 @@
+*{font-family: roboto;margin: 0px;padding: 0px; }
+
+/* nabr css */
+
+.nav-cart-container{position: relative;}
+.nav-cart-p{position: absolute;top: -20px;right: 20px;color: white;background-color: black;
+padding:0px 8px;border-radius: 20px;
+}
+@media screen and (width<600px) {
+  
+  .nav-left-container{margin-top: 30px;}
+  .hero-p{font-size: 12px;}
+  
+}
+
+
+
+/* nabr css */
+
+
+.hero{margin-top: 0px;}
+.card-img{width: 180px;}
+.rate-card{width: 100px;}
+.section-2-img{width: 100px;}
+.section-2-img2{width: 70px;}
