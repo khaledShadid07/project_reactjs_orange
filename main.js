@@ -5,6 +5,7 @@ import { Cart , add_to_cart , updateCartQuantity } from "./cart.js";
 
 
 
+
 // all products container in main page start
 const render_products = () => {
 
