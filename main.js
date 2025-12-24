@@ -1,4 +1,4 @@
-alert("Java Script SwitchedOn You Are In Good Hand ")
+
 console.log("I Dont Drive Fast I Fly Slowly")
 import { products } from "./data/data.js";
 import { Cart , add_to_cart , updateCartQuantity } from "./cart.js";
