@@ -21,5 +21,5 @@ padding:0px 8px;border-radius: 20px;
 .product-card-img{width: 100px;flex-grow: 1;}
 .product-name{width: 200px;}
 .product-card{display: flex;align-content: center;flex-direction: column;justify-content: center;align-items: center;}
-
+.all-products-container{margin-top: 100px;}
 /*product card  */
