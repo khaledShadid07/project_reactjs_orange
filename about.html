@@ -21,29 +21,56 @@
 </head>
 <body>
  <!-- first navbar start -->
-  <nav class="nav d-flex justify-content-between p-4 shadow-lg align-content-center  flex-wrap">
-    <div class="d-flex align-items-center pt-2 me-4">
-      <a style="text-decoration: none;color: black;" href="./">
-        <p class="lead fw-bold ">JavaShop</p>
-      </a>
-    </div>
-    <div class="d-flex flex-grow-1  me-4"><input placeholder="Search For Products" class="form-control border-dark"
-        type="text">
-      <button class="btn btn-dark ms-1"><i class="fa-solid fa-magnifying-glass" style="color: #f1f2f3;"></i></button>
-    </div>
-    <div role="button" class="d-flex align-items-center nav-left-container cursor-pointer">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person me-4"
+ <!-- first navbar start -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./">JavaShop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu">
+              <li> <a href="./main.html" class="text-dark text-decoration-none">
+                  <p role="button" class="  text-dark mx-4 mt-3 ">Products</p>
+                </a></li>
+              <li> <a href="./about.html" class="text-dark text-decoration-none">
+                  <p role="button" class="  text-dark mx-4 mt-3 ">About</p>
+                </a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a href="./contact.html" class="text-dark text-decoration-none">
+                  <p role="button" class="  text-dark mx-4 mt-3 ">Contact</p>
+                </a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex flex-grow-1 " role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+         <nav  class="nav_2 bg-tertiary d-flex justify-content-center align-content-center align-items-center flex-wrap  p-4">
+ 
+      <svg role="button" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-person me-4"
         viewBox="0 0 16 16">
         <path
           d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
       </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart me-4"
+      <svg role="button" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-heart me-4"
         viewBox="0 0 16 16">
         <path
           d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
       </svg>
 
-      <a href="./cart.html">
+      <a role="button" href="./cart.html">
         <div class="nav-cart-container ">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-cart me-4"
             viewBox="0 0 16 16">
@@ -54,28 +81,19 @@
         </div>
       </a>
 
-    </div>
+   
+
+
 
   </nav>
+      </div>
+    </div>
+  </nav>
+  <!-- first navbar end -->
   <!-- first navbar end -->
 
 
-  <!-- second navbar -->
-  <nav class="nav_2 bg-dark d-flex justify-content-center flex-wrap shadow-lg ">
-      <a href="./main.html" class="text-light text-decoration-none"> <p role="button" class="  text-light mx-4 mt-3 ">Products</p></a>
-    
-     <a href="./about.html" class="text-light text-decoration-none"> <p role="button" class="  text-light mx-4 mt-3 ">About</p></a>
-    <a href="./contact.html" class="text-light text-decoration-none"> <p role="button" class="  text-light mx-4 mt-3 ">Contact</p></a>
-    <p role="button" class="  text-light mx-4 mt-3">Product Details</p>
-    <p role="button" class="  text-light mx-4 mt-3 ">Cart</p>
-    <p role="button" class="  text-light mx-4 mt-3 ">Checkout</p>
-    <p role="button" class="  text-light mx-4 mt-3 ">Dropdown</p>
-    <p role="button" class="  text-light mx-4 mt-3 ">Megamenu 1</p>
-    <p role="button" class="  text-light mx-4 mt-3">Megamenu 2</p>
-
-
-  </nav>
-  <!-- second navbar end -->
+  
 
 
   <section class="py-5">
