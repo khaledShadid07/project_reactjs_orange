@@ -23,5 +23,5 @@ padding:0px 8px;border-radius: 20px;
 
 .order-info{display: grid;grid-template-columns: 4fr 1fr;}
 .cart-name{width:200px;text-align: center;}
-.order-summary{margin-top: 100px;}
+.order-summary{margin-top: 50px;}
 .cart-items-container{margin-top: 100px;}
